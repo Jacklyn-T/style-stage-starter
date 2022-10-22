@@ -20,9 +20,10 @@ h6 {
   margin: 0;
 }
 
+/* I cancelled this for the sticky element 
 html {
   overflow-x: hidden;
-}
+} */
 
 /* Set core body defaults */
 body {
@@ -30,7 +31,7 @@ body {
   font-size: 100%;
   line-height: 1.5;
   text-rendering: optimizeSpeed;
-  overflow-x: hidden;
+/*  overflow-x: hidden; I cancelled this for sticky nav */
 }
 
 /* Remove all animations and transitions for people that prefer not to see them */
@@ -56,12 +57,16 @@ html {
 	box-sizing: inherit;
 }
 
-Header{
+header{
   margin: 5rem;
+  margin-bottom: 1rem;
+  background: rgb(175,249,255);
+background: linear-gradient(27deg, rgba(175,249,255,1) 0%, rgba(255,191,204,1) 100%);
+  font-family: 'Cutive Mono', monospace;
 }
 
 main {
-	padding: 2rem;
+	padding: 4rem;
   max-width: 600px;
   font-family: 'Cutive Mono', monospace;
   margin: auto;
@@ -70,28 +75,62 @@ main {
 h1{
   padding-bottom: 1.5 rem;
   text-align: center;
-  font-size: 400%;
+  font-size: 800%;
   font-family: 'VT323', monospace;
+  color: white;
+  -webkit-text-stroke-width: 1.5px;
+  -webkit-text-stroke-color: black;
 }
 
 svg{
   max-width: 1rem;
 }
 
+h2{
+  font-family: 'VT323', monospace;
+  color: #ffbfcc;
+  -webkit-text-stroke-color: black;
+  -webkit-text-stroke-width: 1px;
+  padding-top: 2rem;
+}
 
-nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  float: left;
-  color: #f2f2f2;
-  text-align: center;    
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
+
+nav{
+  border: 3px solid black;
+  text-align: center;
+  width: 100%;
+  margin: auto;
+  position: sticky;
+  top: 0;
+  background: #ffbfcc;
+  font-family: 'VT323', monospace;
+}
+
+nav li{
+  display: inline;
+  color: white;
+}
+
+nav a{
+  display: inline-block;
+  padding 10px;
+  padding: 0 2rem;
+  font-size: 120%;
+  transition: 0.3s;
+}
+
+nav a:hover {
+	background: black;
+  padding: 2rem;
+	color:white;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a {
+    float: none;
+    width: 100%;
   }
-
-
+}
 
 header div{
   border-color: lightgrey;
@@ -103,12 +142,36 @@ header div{
 	box-sizing: content-box;
 }
 
-section li {
-	background: white;
-	font-size: 2em;
+#about section li {
+	background: black;
+	font-size: 1.5rem;
 	font-weight: bold;
-	padding: 0.25em;
+	padding: 0.25rem;
 	border: 2px solid black;
-
+  max-width: 100%;
+  text-align: center;
+  transition: 0.3s;
+  color: white;
 }
 
+#about section li:hover {
+	background-color: #ffbfcc;
+	color:black;
+}
+
+#about section ul{
+  list-style: none;
+  height: 100vh;
+	display: grid;
+  grid-template-columns: fit-content(300px) fit-content(300px) 1fr;
+  grid-gap: 20px;
+  box-sizing: border-box;
+  height: auto;
+  padding: 10px;
+  align-content: center;
+}
+
+section h3{
+  background-color: pink;
+  display: inline;
+}
