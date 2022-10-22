@@ -86,7 +86,7 @@ svg{
   max-width: 1rem;
 }
 
-h2{
+article h2{
   font-family: 'VT323', monospace;
   color: #ffbfcc;
   -webkit-text-stroke-color: black;
@@ -175,3 +175,61 @@ section h3{
   background-color: pink;
   display: inline;
 }
+
+aside.profile{
+  background: rgb(175,249,255);
+background: linear-gradient(27deg, rgba(175,249,255,1) 0%, rgba(255,191,204,1) 100%);
+  font-family: 'Cutive Mono', monospace;
+  max-width: 600px;
+  border: 3px solid black;
+  margin-left: 50%;
+  margin-right: 4rem;
+  margin-bottom: 5rem;
+  padding: 2rem;
+}
+
+#styles{
+  background: rgb(175,249,255);
+background: linear-gradient(27deg, rgba(175,249,255,1) 0%, rgba(255,191,204,1) 100%);
+  font-family: 'Cutive Mono', monospace;
+  max-width: 600px;
+  position: left;
+  border: 3px solid black;
+  margin-left: 4rem;
+  padding: 3rem;
+}
+
+
+footer{
+  font-family: 'VT323', monospace;
+  padding: 2rem;
+  max-width: 1000px;
+  font-family: 'Cutive Mono', monospace;
+  margin: auto;
+  margin-bottom: 2rem;
+}
+
+footer ul{
+  border: 3px solid black;
+  text-align: center;
+  width: 100%;
+  margin: auto;
+  background: #ffbfcc;
+  font-family: 'VT323', monospace;
+  padding: 2rem;
+}
+
+footer li{
+  display: inline;
+}
+
+footer li{
+  display: inline-block;
+  padding 2rem;
+  transition: 0.3s;
+}
+
+footer li:hover {
+	background: white;
+}
+
