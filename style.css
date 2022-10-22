@@ -44,7 +44,7 @@ body {
   }
 }
 
-// Begin theme styles
+/* Begin theme styles */
 
 @import url('https://fonts.googleapis.com/css2?family=Bungee+Hairline&family=Cutive+Mono&family=Raleway+Dots&family=VT323&display=swap');
 
@@ -113,7 +113,7 @@ nav li{
 
 nav a{
   display: inline-block;
-  padding 10px;
+  padding: 10px;
   padding: 0 2rem;
   font-size: 120%;
   transition: 0.3s;
@@ -225,7 +225,7 @@ footer li{
 
 footer li{
   display: inline-block;
-  padding 2rem;
+  padding: 2rem;
   transition: 0.3s;
 }
 
